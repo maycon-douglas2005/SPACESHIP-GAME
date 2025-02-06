@@ -1,0 +1,27 @@
+.coluna_personagem{
+    animation: paraDireita 2s linear 1s 1 alternate forwards;
+}
+
+@keyframes paraDireita {
+    to {
+        transform: translateX(calc(100dvw - 550px));
+    }
+}
+
+.coluna_persona_esquerda{
+    position: relative;
+    left: 775px;
+    animation: paraEsquerda 2s linear 1s 1 alternate forwards;
+}
+
+@keyframes paraEsquerda {
+    to {
+        transform: translateX(-770px);
+    }
+}
+
+body{
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
