@@ -1,10 +1,19 @@
+#titulo_header{
+    animation: titulo_movimentando 10s linear alternate infinite;
+}
+
+@keyframes titulo_movimentando {
+    to {
+        transform: translateX(100%);
+    }
+}
+
 .coluna_personagem{
     animation: paraDireita 2s linear forwards;
 }
 
 @keyframes paraDireita {
     to {
-        
         transform: translateX(70dvw);
     }
 }
