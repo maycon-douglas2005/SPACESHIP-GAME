@@ -1,22 +1,33 @@
+#titulo_header{
+    animation: titulo_movimentando 10s linear alternate infinite;
+}
+
+@keyframes titulo_movimentando {
+    to {
+        transform: translateX(100%);
+    }
+}
+
 .coluna_personagem{
-    animation: paraDireita 2s linear 1s 1 alternate forwards;
+    animation: paraDireita 2s linear forwards;
 }
 
 @keyframes paraDireita {
     to {
-        transform: translateX(calc(100dvw - 550px));
+        transform: translateX(70dvw);
     }
 }
 
 .coluna_persona_esquerda{
-    position: relative;
-    left: 775px;
-    animation: paraEsquerda 2s linear 1s 1 alternate forwards;
+    animation: paraEsquerda 2s linear forwards;
 }
 
 @keyframes paraEsquerda {
+    from {
+        transform: translateX(70dvw);
+    }
     to {
-        transform: translateX(-770px);
+        transform: translateX(0dvw);
     }
 }
 

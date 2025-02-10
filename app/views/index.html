@@ -7,15 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../public/css/styles.css">
 </head>
+
 <body>
-    <header class="container-fluid bg-dark">
+    <header class="container-fluid bg-dark p-2 mb-3">
         <div class="row justify-content-between">
-            <div class="col-4 text-primary">
+            <div id="titulo_header" class="col-auto text-primary">
                 SPACESHIP GAME
             </div>
-            <div class="col-2">
+            <div class="col-auto">
                 <nav>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a class="text-danger" href="">Reiniciar</a></li>
                     </ul>
                     
@@ -24,24 +25,39 @@
         </div>
     </header>
 
-    <main class="container m-3">
-        <div id="linha" class="row">
-            <div class="col-6 " id="coluna">
-                <img id="personagem" src="../../public/img/personagem.jpeg" alt="" class="img-fluid">
-            </div>
+    <main class="container">
+        <div class="alert alert-warning alert-dimissible fade show" role="alert">
+            <button class="btn-close" data-bs-dismiss="alert" type="button"></button>
+            <hr>
+            <p>Aviso: Esse site é apenas um projeto didático que visa testar meus conhecimentos 
+                com bootstrap, animações css e js. Todavia eu 
+                agradeço por visita-lo! 
+            </p> 
+                
         </div>
+        <section id="linha" class="row gy-3 personagem_e_botoes">
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6" id="coluna">
+                        <img id="personagem" src="../../public/img/personagem.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 bg-muted">
+                <div class="row justify-content-center text-center align-items-center">
+                    <div class="col-2 col-md-1" style="cursor: pointer;">
+                        <img id="btnEsquerda" src="../../public/img/seta-esquerda.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-2 col-md-1" style="cursor: pointer;">
+                        <img id="btnDireita" src="../../public/img/seta-direita.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-1" style="cursor: pointer;">
-                <img id="btnEsquerda" src="../../public/img/esquerda.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-1" style="cursor: pointer;">
-                <img id="btnDireita" src="../../public/img/direita.png" alt="" class="img-fluid">
-            </div>
-        </div>
-    </footer>
+
 
     <script src="../../public/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
