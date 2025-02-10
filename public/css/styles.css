@@ -4,6 +4,7 @@
 
 @keyframes paraDireita {
     to {
+        
         transform: translateX(70dvw);
     }
 }
